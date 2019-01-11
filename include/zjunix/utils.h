@@ -1,6 +1,7 @@
 #ifndef _ZJUNIX_UITILS_H
 #define _ZJUNIX_UITILS_H
 
+#define UPPER_ALLIGN(x, y) (((x)+((y)-1)) & ~((y)-1))
 #define container_of(ptr, type, member) ((type*)((char*)ptr - (char*)&(((type*)0)->member)))
 
 void* kernel_memcpy(void* dest, void* src, int len);
